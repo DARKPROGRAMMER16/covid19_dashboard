@@ -1,0 +1,30 @@
+#global-heading{
+    color:aquamarine;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.card-area{
+    padding: 50px 0;
+    margin-bottom: 100px;
+}
+.card{
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.row{
+    margin-left: 10vh;
+}
+.card{
+    width: 20rem;
+    /* border-bottom: 10px solid darkcyan; */
+
+}
+
+.card-text{
+    font-size: 35px;
+    font-weight: 500;
+}

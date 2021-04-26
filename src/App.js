@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react'
+import logo from './images/COVID19.jpg';
+import './App.css'
+import GlobalCases from './components/GlobalCases';
+import CaseByCountries from './components/CaseByCountries';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment>
+      <div className="header text-center mt-2">
+        <h3>COVID-19 CORONAVIRUS DASHBOARD</h3>
+        <img className="logo" src={logo} alt="logo" />
+      </div>
+      <GlobalCases/>
+      <CaseByCountries/>
+    </Fragment>
+  )
 }
 
-export default App;
+export default App
